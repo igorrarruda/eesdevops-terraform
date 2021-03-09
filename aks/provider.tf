@@ -18,5 +18,4 @@ data "azurerm_client_config" "current" {
   client_id       = var.client_id
   client_secret   = var.client_secret
   tenant_id       = var.tenant_id
-  features {}
 }
