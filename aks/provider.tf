@@ -7,6 +7,7 @@ terraform {
 provider "azurerm" {
   # It is recommended to pin to a given version of the Provider
   version = "=2.47.0"
+  features {}
 }
 
 # Data
