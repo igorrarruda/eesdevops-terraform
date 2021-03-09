@@ -8,7 +8,7 @@
 resource "azurerm_resource_group" "main" {
   name     = "rg-${var.appname}-${var.environment}-main"
   location = var.location
-  tags     = {
+  tags = {
     department = var.department
   }
 }
@@ -22,9 +22,9 @@ resource "azurerm_kubernetes_cluster" "main" {
   dns_prefix          = var.appname
 
   default_node_pool {
-    name            = "default"
-    node_count      = 1
-    vm_size         = "Standard_D2_v2"
+    name       = "default"
+    node_count = 1
+    vm_size    = "Standard_D2_v2"
   }
 
   identity {

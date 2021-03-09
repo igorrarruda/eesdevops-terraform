@@ -15,25 +15,25 @@ variable "tenant_id" {
 }
 
 variable "appname" {
-  type = string
+  type        = string
   description = "Application name. Use only lowercase letters and numbers"
-  default = "eesdevopsaks"
+  default     = "eesdevopsaks"
 }
 
 variable "environment" {
-  type    = string
+  type        = string
   description = "Environment name, e.g. 'dev' or 'stage'"
-  default = "dev"
+  default     = "dev"
 }
 
 variable "location" {
-  type    = string
+  type        = string
   description = "Azure region where to create resources."
-  default = "eastus"
+  default     = "eastus"
 }
 
 variable "department" {
-  type    = string
+  type        = string
   description = "A sample variable passed from the build pipeline and used to tag resources."
-  default = "Engineering"
+  default     = "Engineering"
 }
