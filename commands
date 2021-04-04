@@ -1,2 +1,0 @@
-az aks get-credentials --resource-group eesdevops-resources --name eesdevops-aks1
-kubectl apply -f wp-app-deployment.yaml
